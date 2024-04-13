@@ -1,0 +1,48 @@
+<div class="todo modal">
+  <!-- modal summary -->
+  <h2>Summary</h2>
+  <p>You have completed all the tasks</p>
+  <hr />
+  <ul class="model-ul">
+    {content} {totalTimeSavedorWasted >= 0 ? (
+    <li class="saved">Total {totalTimeSavedorWasted} seconds saved</li>
+    ) : (
+    <li class="wasted">
+      Total {Math.abs(totalTimeSavedorWasted)} seconds wasted
+    </li>
+    )}
+  </ul>
+  <button class="summary-modal-btn">Start Break Timer</button>
+
+  <!-- break end modal -->
+  <h2>Break Ended</h2>
+  <hr />
+  <ul class="model-ul">
+    {content} {totalTimeSavedorWasted >= 0 ? (
+    <li class="saved">Total {totalTimeSavedorWasted} seconds saved</li>
+    ) : (
+    <li class="wasted">
+      Total {Math.abs(totalTimeSavedorWasted)} seconds wasted
+    </li>
+    )}
+  </ul>
+  <button class="summary-modal-btn">Go Home</button>
+
+  <!-- confirm modal  -->
+
+  <h2>Are you sure ?</h2>
+  <hr />
+  <p>Have you completed {confirmCheckedTask.task} ?</p>
+  <button class="summary-modal-btn">Yes</button>
+  <button class="summary-modal-btn">No</button>
+
+  <!-- modal confirm end  -->
+
+  <h2>Are you sure ?</h2>
+  <hr />
+  <p>Finish Break ?</p>
+  <button class="summary-modal-btn">Yes</button>
+  <button class="summary-modal-btn">No</button>
+</div>
+
+<div class="overlay"></div>

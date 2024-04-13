@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../homepage/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script defer src="./signup.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="login-container">
+        <div class="form-container signup-form">
+          <form class="signup-form-element">
+            <div>
+              <label for="username">Username</label>
+              <input type="text" name="user" id="username" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div>
+              <label for="confirmPassword">confirm password</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+              />
+            </div>
+            <div>
+              <label for="profession">Profession</label>
+              <input type="text" name="profession" id="profession" />
+            </div>
+            <div>
+              <label for="image">Image Name</label>
+              <select name="image" id="image">
+                <option value="batman">batman</option>
+                <option value="kakashi">kakashi</option>
+                <option value="athlete">athlete</option>
+                <option value="default">default</option>
+              </select>
+            </div>
+            <button class="sign-up-btn login-btn">Signup</button>
+            <a class="sign-up-btn" href="./login.html">
+              Already a user ? Log in
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

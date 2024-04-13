@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../homepage/style.css" />
+    <link rel="stylesheet" href="./timer.css" />
+    <link rel="stylesheet" href="./modal.html" />
+
+    <script type="module" defer src="./GMNGame.js"></script>
+    <script type="module" defer src="./index.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="timers-container">
+        <div class="timer-container task-timer-container">
+          <h1>Task Timer</h1>
+          <h2>
+            <div class="time">
+              <div class="hour">00</div>
+              <div class="min">00</div>
+              <div class="sec">00</div>
+            </div>
+          </h2>
+
+          <button class="start-timer-btn">Start Timer</button>
+          <button class="pause-timer-btn start-timer-btn hidden-no-display">
+            Pause Timer
+          </button>
+
+          <div class="task-list">
+            <ul class="timer-tasks-card">
+              <div class="taskgroup-details">
+                <div>
+                  <h2>Title</h2>
+                  <p class="taskgroup-desc">Description</p>
+                </div>
+                <div class="taskgroup-timer">0 Minutes</div>
+              </div>
+
+              <!-- MAPPED HERE  -->
+            </ul>
+          </div>
+
+          <ul class="summary-ul">
+            <!-- Summary Component  -->
+          </ul>
+        </div>
+
+        <div class="timer-container break-timer-container">
+          <h1>Break Timer</h1>
+          <h2>
+            <div class="time">
+              <div class="hour">00</div>
+              <div class="min">00</div>
+              <div class="sec">00</div>
+            </div>
+          </h2>
+
+          <div class="game-btn-container hidden">
+            <!-- <p>GAME</p> -->
+            <button class="game-btn game-btn1">GMN</button>
+            <button class="game-btn game-btn2">Rest</button>
+          </div>
+
+          <div class="break-content">
+            <!-- Game Component  -->
+
+            <!-- Rest  -->
+          </div>
+          <button class="back-btn hidden">&lt;- Finish</button>
+        </div>
+
+        <!-- MODAL COMPONENT -->
+        <!-- <div class="todo modal small-modal">
+          <h2>Are you sure ?</h2>
+          <hr />
+          <p>Have you completed Task ?</p>
+          <button class="summary-modal-btn">Yes</button>
+          <button class="summary-modal-btn">No</button>
+        </div>
+        <div class="overlay"></div> -->
+      </div>
+    </div>
+  </body>
+</html>
