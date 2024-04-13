@@ -2,10 +2,9 @@
 
 Pomodoro js is a task management app based on the task and break timers which lets you do work efficiently while keeping track of the time. This App is based on the previous version of it which I developed using react js and node js.
 
-**Urls of previous version:**
+**Url of previous version:**
 
-- client: https://github.com/gaurav-celestial/pomodoro
-- server: https://github.com/gaurav-celestial/pomodoro-backend
+- https://github.com/gauravyadav-wd/Pomodoro
 
 ## Objectives
 
